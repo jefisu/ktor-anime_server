@@ -7,5 +7,7 @@ import org.bson.types.ObjectId
 @Serializable
 data class Anime(
     val name: String,
+    val timestamp: String,
+    val date: String,
     @BsonId val id: String = ObjectId().toString(),
 )
