@@ -9,5 +9,6 @@ data class Anime(
     val name: String,
     val timestamp: String,
     val date: String,
+    val lastModify: String? = null,
     @BsonId val id: String = ObjectId().toString(),
 )
